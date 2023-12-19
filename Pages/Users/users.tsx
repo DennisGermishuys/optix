@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState} from "react";
 import {InvoicesTableSkeleton} from "../../src/skeletons/skeletons.tsx";
-import Pagination from "../../src/components/pagination.tsx";
+import Pagination from "../../src/components/Pagination/pagination.tsx";
 import {useSearchParams} from "react-router-dom";
 import {Button} from "@mui/material";
 import * as React from "react";
