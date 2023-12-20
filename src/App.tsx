@@ -5,7 +5,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Users from "../Pages/Users/users.tsx";
 import Header from "./components/Header/header.tsx";
 import {createTheme, CssBaseline, ThemeProvider} from "@mui/material";
-import Home from "../Pages/Home/Home.tsx";
+import Home from "../Pages/Home/home.tsx";
 function App() {
     const storageTheme = localStorage.getItem('theme') || null;
     const [toggleDarkMode, setToggleDarkMode] = useState<string>( storageTheme || 'dark');
@@ -39,7 +39,7 @@ function App() {
             if (file) {
                 const formData = new FormData();
                 formData.append("file", file);
-                const url = 'https://mvai.qa.onroadvantage.com/api/analyse';
+                const url = 'https://mvai.qa.onroadvantage.com/api/analyse?models=DriveAlertAudio&fps=5&orientation=right';
 
                 axios.post(url, formData, {
                     headers: {

@@ -49,15 +49,16 @@ export default function Home() {
 
     const handleClickOpen = useCallback(() => {
         setOpen(true);
-    },[open]);
+    },[]);
 
     const handleClose = useCallback(() => {
         setOpen(false);
-    },[open]);
+        navigate('/users');
+    },[]);
 
 
     const handleNavigate = useCallback(() => {
-        navigate('/upload');
+        navigate('/users');
     },[navigate]);
 
     return (

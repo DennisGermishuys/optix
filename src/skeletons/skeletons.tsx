@@ -52,7 +52,6 @@ export function InvoicesTableSkeleton() {
               <TableRowSkeleton />
               <TableRowSkeleton />
               <TableRowSkeleton />
-              <TableRowSkeleton />
             </tbody>
           </table>
         </div>
