@@ -90,7 +90,7 @@ const Users = () => {
 
     return !users || loading ? (<InvoicesTableSkeleton />) : (
         <div className="w-full">
-            <div className="mt-6 flow-root">
+            <div className="mt-[4.5rem] flow-root">
                 <div className="overflow-x-auto">
                     <div className="inline-block min-w-full align-middle">
                         <div className="overflow-hidden rounded-md bg-gray-50 p-2 md:pt-0">
